@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
-/**
- *
- * @author klaus
- */
 public class FindMultiples {
 
     /*
