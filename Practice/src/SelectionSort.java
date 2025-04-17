@@ -34,5 +34,12 @@ public class SelectionSort{
         }
     }
 
+    public static void binarySearch(int[]array){
+        int find = 1;
+        boolean found = false;
+
+        
+    }
+
 
 }
