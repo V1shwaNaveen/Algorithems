@@ -73,7 +73,6 @@ public class SelectionSort{
         if (found){
             System.out.println("Found the number Linear");
         }
-
     }
 
 
