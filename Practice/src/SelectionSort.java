@@ -74,6 +74,4 @@ public class SelectionSort{
             System.out.println("Found the number Linear");
         }
     }
-
-
 }
