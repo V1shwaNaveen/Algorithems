@@ -18,13 +18,16 @@ public class SelectionSort{
         for(int i : array) {
             System.out.print(i);
         }
+
+        binarySearch(array);
+        linearSearch(array);
     }
 
-    private static void selectionSort(int[] array) {
-        for (int i =0; i<array.length-1;i++){
+    public static void selectionSort(int[]array){
+        for (int i = 0; i<array.length-1;i++){
             int min = i;
             for (int j = i+1; j<array.length;j++){
-                if (array[min]>array[j]){
+                if(array[min]>array[j]){
                     min = j;
                 }
             }
@@ -32,6 +35,45 @@ public class SelectionSort{
             array[i] = array[min];
             array[min] = temp;
         }
+    }
+
+    public static void binarySearch(int[]array){
+        int find = 1;
+        boolean found = false;
+        int first = 0;
+        int last = array.length-1;
+
+        while (first<=last){
+            int middle = (first+last)/2;
+            if (array[middle]==find){
+                found = true;
+                break;
+            } else if (array[middle]>find) {
+                last = middle-1;
+            } else {
+                first = middle+1;
+            }
+        }
+        if (found){
+            System.out.println("Found the number");
+        }else {
+            System.out.println("Couldn't find the number");
+        }
+    }
+    public static void linearSearch(int[]array){
+        int find = 4;
+        boolean found = false;
+
+        for (int num : array){
+            if (num == find){
+                found = true;
+                break;
+            }
+        }
+        if (found){
+            System.out.println("Found the number Linear");
+        }
+
     }
 
 
